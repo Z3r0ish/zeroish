@@ -33,7 +33,7 @@ function theme_set(color) {
     img = lightImg
   }
   document.getElementById('theme-readout').innerHTML = img;
-  document.body.setAttribute('data-theme', 'color');
+  document.body.setAttribute('data-theme', color);
 }
 
 var theme_OS = window.matchMedia('(prefers-color-scheme: light)');
