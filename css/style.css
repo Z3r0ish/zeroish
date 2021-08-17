@@ -58,6 +58,14 @@ body {
     right: 0px;
     margin: 1em;
     z-index: 100cs;
+    height: 75px;
+}
+
+#theme-readout {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
 }
 
 #theme-readout > svg {
