@@ -18,6 +18,8 @@ html, body {
     transition: var(--transition);
 }
 
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap');
+
 [data-theme="light"] {
     --bg-color: #E5E6E7;
     --font-color: #000;
