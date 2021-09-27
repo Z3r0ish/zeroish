@@ -62,5 +62,3 @@ if (localStorage.getItem('theme') != null) {
 } else {
 	theme_set('dark');
 }
-
-console.log("test")
