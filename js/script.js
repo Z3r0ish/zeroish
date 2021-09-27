@@ -46,3 +46,21 @@ theme_OS.addEventListener('change', function (e) {
   }
   theme_apply();
 });
+
+if (localStorage.getItem('theme') != null) {
+
+	if (localStorage.getItem('theme') === 'dark') {
+    		theme_set('dark');
+	} else if (localStorage.getItem('theme') === 'light') {
+    		theme_set('light');
+	}
+
+} else if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+	theme_set('dark');
+} else if (window.matchMedia('(prefers-color-scheme: light)').matches) {
+	theme_set('light');
+} else {
+	theme_set('dark');
+}
+
+console.log("test")
