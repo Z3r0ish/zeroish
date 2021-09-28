@@ -1,22 +1,22 @@
 <?xml version="1.0" encoding="UTF-8"?>
 	<urlset xmlns="http://www.google.com/schemas/sitemap/0.84" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
 		<url>
-			<loc>https:/zeroish.ml</loc>
+			<loc>http:/zeroish.ml</loc>
 			<changefreq>weekly</changefreq>
 		</url>
 
 		<url>
-			<loc>https:/zeroish.ml/warnings</loc>
+			<loc>http:/zeroish.ml/warnings</loc>
 			<changefreq>weekly</changefreq>
 		</url>
 
 		<url>
-			<loc>https:/zeroish.ml/discord</loc>
+			<loc>http:/zeroish.ml/discord</loc>
 			<changefreq>weekly</changefreq>
 		</url>
 
 		<url>
-			<loc>https:/zeroish.ml/cadence</loc>
+			<loc>http:/zeroish.ml/cadence</loc>
 			<changefreq>weekly</changefreq>
 		</url>
 
