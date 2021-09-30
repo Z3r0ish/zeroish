@@ -78,6 +78,9 @@ body {
 .logo {
     max-height: 95vh;
     max-width: 70vw;
+    width: -moz-available;
+    width: -webkit-fill-available;
+    width: fill-available;
 }
 
 .small-logo {
