@@ -42,7 +42,6 @@ body {
 
 .cls-2, .cls-3, .cls-4, .cls-5 {
     stroke:var(--stroke);
-    transition: var(--transition);
 }
 
 .cls-3, .cls-6 {
@@ -64,15 +63,16 @@ body {
 }
 
 #theme-readout {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 100%;
+	background-color: rgba(0,0,0,0)
 }
 
 #theme-readout > svg {
     height: 50px;
-    width: 50px;;
+    width: 50px;
 }
 
 .logo {
@@ -89,54 +89,78 @@ body {
     width: 50px;
 }
 
-.menu {
+.menu{
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
     height: 100%;
 }
-
-.small-menu {
-    display: flex;
-    flex-direction: row;
-    direction: ltr;
-    position: absolute;
+.small-menu{
+	display: flex;	
+        flex-direction: row;	
+	direction: ltr;	
+	position: absolute;	
 }
 
 .links {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    height: 100%;
-    width: 0px;
-    height: 0px;
     direction: ltr;
     white-space: nowrap;
+}
+
+.links ul {
+	list-style-type: none;
+	padding: 0;
 }
 
 .dropdown-menu {
     padding: 0;
     list-style-type: none;
     white-space: nowrap;
-    transition: width ease-out 1s ;
+    transition: width ease-out 1s;
 }
 
 .links::-webkit-scrollbar {
     display: none;
 }
 
-.links > a {
+.links > ul > li {
     display: block;
     color: inherit;
     text-decoration: inherit;
     padding: 1em;
+    transition: var(--transition);
 }
 
-.links > a:hover {
+.links > ul > li > a {
+	color: inherit;
+	text-decoration: inherit;
+}
+
+.links > ul > li > form > input {
+	padding: 0;
+   	border: none;
+        outline: none;
+	background-color: rgba(0, 0, 0, 0);
+	font-family: inherit;
+	font-size: inherit;
+	overflow: hidden;
+	width: 90%;
+	color: var(--font-color);
+	transition: none;
+}
+
+::placeholder {
+	color: var(--font-color);
+}
+
+.links > ul > li:hover {
     font-size: 2em;
     border-right: .1em solid #ee2425;
-    transition: width ease-out 0.1s ;
+    transition: width ease-out 0.1s;
 }
 
 .menu:not(:hover) > .links {
@@ -161,7 +185,6 @@ body {
     display: block;
     width: 175px;
     backdrop-filter: blur(10px);
-
 }
 
 .dropdown-menu > li {
@@ -169,13 +192,13 @@ body {
     color: inherit;
     text-decoration: inherit;
     padding: .25em;
-    transition: ease-out 0.05s ;
+    transition: ease-out 0.05s;
 }
 
 .dropdown-menu > li > a {
     color: inherit;
     text-decoration: inherit;
-    transition: ease-out 0.05s ;
+    transition: ease-out 0.05s;
 }
 
 .dropdown-menu > li:hover {
@@ -200,4 +223,16 @@ body {
 
 .warnings > li > a {
     color: #ee2425;
+}
+
+footer {
+	position: absolute;
+	right: 0;
+	font-size: 2em;
+	bottom: 0;
+}
+footer > ul, footer > ul > li > a{
+	margin: 0;
+	list-style-type: none;
+	text-decoration: none;
 }
