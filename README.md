@@ -1,2 +1,2 @@
 # zeroish
-The site is located at https://zeroish.ml
+The site is located at https://zeroish.xyz
