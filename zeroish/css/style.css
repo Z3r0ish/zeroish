@@ -216,12 +216,12 @@ body {
 
 }
 
-.warnings > li {
-    padding-top: 1em;
+li {
+    padding-bottom: 1em;
     transition: none;
 }
 
-.warnings > li > a {
+a {
     color: #ee2425;
 }
 
